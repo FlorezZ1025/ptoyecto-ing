@@ -1,0 +1,28 @@
+
+<p>
+  Transform la gestión de contratistas con nuestra <br>
+  plataforma web intuitiva y eficiente. Simplifica tus <br>procesos, reduce riesgos y potencia el crecimiento <br>
+  de tu empresa. Descubre una nueva forma de <br>administrar contratos fácilmente.
+</p>
+<section>
+  <div class="box">
+    <mat-slide-toggle> slide me </mat-slide-toggle>
+
+      @if (isLoggedIn){
+        <app-home></app-home>
+
+      }@else{
+      <h2>Inicie sesión <br>Regístrese</h2>
+      <nav class="navbar animate-color">
+        <ul>
+            <li><a font-size = "10px">Inicie sesión para visualizar su información!</a></li>
+
+        </ul>
+      </nav>
+      }
+
+    <button (click)="isLoggedIn = true">Iniciar sesión</button>
+    <button (click)="isLoggedIn = true">Registrarse</button>
+  </div>
+</section>
+<img src="../../../assets/logo.png" alt="Logo de la empresa">
