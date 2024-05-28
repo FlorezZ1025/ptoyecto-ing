@@ -1,11 +1,66 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
 .logo img {
-    width: 150px;
-    height: 150px;
+    width: 170px; /* Ajusta el tamaño según sea necesario */
+    height: 170px; /* Ajusta el tamaño según sea necesario */
     border-radius: 50%;
-    margin-right: 20px;
-    position: relative;
-    top: 10px;
+    margin-top: 130px; /* Reduje el margen superior para centrar el círculo */
+}
+
+
+.logo h3 {
+    margin: 10px 0;
+    background-color: rgb(113, 190, 196);
+    padding: 5px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
     display: block;
-    margin: 0 auto; /* Esto centrará la imagen horizontalmente */
-    margin-top: 100px; /* Esto centrará la imagen verticalmente */
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"] {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #5a5858;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #33495c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #30788a;
 }
