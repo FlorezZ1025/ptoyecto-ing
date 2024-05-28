@@ -1,0 +1,11 @@
+.logo img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+    position: relative;
+    top: 10px;
+    display: block;
+    margin: 0 auto; /* Esto centrará la imagen horizontalmente */
+    margin-top: 100px; /* Esto centrará la imagen verticalmente */
+}

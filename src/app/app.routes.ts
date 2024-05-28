@@ -4,6 +4,7 @@ import { ContratosComponent } from './components/contratos/contratos.component';
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
 import { AboutInfoComponent } from './components/about-info/about-info.component';
+import { MisContratosComponent } from './components/mis-contratos/mis-contratos.component';
 
 export const routes: Routes = [
     {
@@ -11,6 +12,7 @@ export const routes: Routes = [
     {   path: 'login', component:LoginComponent},
     {   path: 'contratos', component: ContratosComponent},
     {   path: 'about', component:AboutInfoComponent},
+    {   path: 'mis-contratos', component: MisContratosComponent},
     {   path: '**',  redirectTo:''}
 
 ];
