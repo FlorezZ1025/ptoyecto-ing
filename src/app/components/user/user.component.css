@@ -1,119 +1,61 @@
-section {
-    max-width: 500px;
-    margin: 0 auto;
-    padding-top: 220px;
-    font-size: 24px;
-    text-align: center;
-    position: relative;
-}
-  
-  /* Estilos para la caja */
-  .box {
-    width: 80%; /* Ancho relativo */
-    max-width: 400px; /* Ancho máximo */
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 0 auto;
-  }
-  
-  /* Estilos para los botones */
-button {
-    font-size: 20px;
-    padding: 8px 16px;
-    border-radius: 4px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    cursor: pointer;
-    margin-top: 16px;
-    margin-left: 10px;
-    transition: background-color 0.3s, transform 0.3s;
-  }
-  
-  button:hover {
-    background-color: #0056b3;
-    transform: scale(1.05);
-  }
-  
-  /* Estilos para la barra de navegación */
-  .navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 10px 0;
-    z-index: 1000;
-    text-align: center;
-    transition: background-color 0.5s ease;
-  }
-  
-  .navbar ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .navbar ul li {
-    display: inline;
-    margin-right: 20px;
-  }
-  
-  .navbar ul li a {
-    color: white;
-    text-decoration: none;
-  }
-  
-  .navbar ul li a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Animación de cambio de color de fondo */
-  @keyframes changeColor {
-    0% { background-color: #007bff; }
-    50% { background-color: #4e86e4; }
-    100% { background-color: #007bff; }
-  }
-  
-  .navbar.animate-color {
-    animation: changeColor 5s infinite;
-  }
-  
-  /* Temas de color */
-  body {
-    background-color: #ffffff;
-    color: #000000;
-  }
-  
-  .dark-theme body {
-    background-color: #333333;
-    color: #ffffff;
-  }
-  
-  /* Estilos para las imágenes */
-img {
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin-top: 100px;
-  }  
-
-p {
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 80%;
-    max-width: 450px;
-    padding: 20px;
-    background-color: #f4f4f4;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    font-size: 20px;
-    text-align: center;
-    color: #333;
-    font-family: Arial, sans-serif;
-    line-height: 1.5;
+.profile-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
 }
 
+.profile-container h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.profile-container p {
+  margin-bottom: 20px;
+}
+
+.profile-container div {
+  margin-bottom: 15px;
+}
+
+.profile-container label {
+  display: block;
+  font-weight: bold;
+}
+
+.profile-container input[type="text"],
+.profile-container input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.profile-container .edit-btn {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.profile-container .edit-btn:hover {
+  background-color: #0056b3;
+}
+.file-upload-label {
+  cursor: pointer;
+  color: #2196F3; /* Azul */
+}
+
+.file-upload-label i {
+  font-size: 36px; /* Tamaño del ícono */
+}
+
+.file-upload-label:hover {
+  color: #0b7dda; /* Azul oscuro al pasar el ratón por encima */
+}

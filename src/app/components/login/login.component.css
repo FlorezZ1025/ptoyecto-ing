@@ -65,3 +65,20 @@
     background-color: #b2bdef;
     
 }
+.btn-iniciar-sesion {
+    background-color: #4e7db6; /* Color azul claro */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%; /* Asegura que el botón ocupe todo el ancho del contenedor */
+    font-size: 16px; /* Tamaño de fuente ajustable */
+    transition: background-color 0.3s; /* Añade una transición suave para el hover */
+    margin-left: 60px;
+    margin-top: 10px;
+}
+
+.btn-iniciar-sesion:hover {
+    background-color: #0883ac; /* Color azul más oscuro para el hover */
+}
