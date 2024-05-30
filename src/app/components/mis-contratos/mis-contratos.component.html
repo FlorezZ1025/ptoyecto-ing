@@ -39,7 +39,8 @@
                 <p *ngIf="selectedFile.contratistaInfo.valorHora && selectedFile.contratistaInfo.horas">
                     Valor de hora: {{ selectedFile.contratistaInfo.valorHora }}<br>
                     Número de horas: {{ selectedFile.contratistaInfo.horas }}<br>
-                    Pago total: {{ calcularPagoTotal(selectedFile.contratistaInfo) | currency }}
+                    La base de IBC por la que debe pagar <br>
+                    seguridad social, es: {{ calcularPagoTotal(selectedFile.contratistaInfo) | currency }}
                     <br>
                     <span *ngIf="calcularPagoTotal(selectedFile.contratistaInfo) < 520000">
                         Usted no debe pagar seguridad social.

@@ -62,9 +62,11 @@ export class MisContratosComponent implements OnInit {
     let pagoTotal = valorHora * horas;
 
     if (pagoTotal > 1300000) {
-      pagoTotal = 1300000 * 0.4; // Limitar el pago total a 520000 (40% de 1300000)
-  } else {
-      pagoTotal = 0; // Si el pago total es menor o igual a 1300000, establecerlo en 0
+      pagoTotal *= 0.4; // Limitar el pago total a 520000 (40% de 1300000)
+  } if (pagoTotal <= 1300000) {
+
+      pagoTotal = 1300000* 0.4; // Si el pago total es menor o igual a 1300000, establecerlo en 0
   }
   return pagoTotal;
   }}  
+
