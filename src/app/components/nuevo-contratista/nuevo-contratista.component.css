@@ -79,4 +79,60 @@ button:hover {
     background-color: #30788a;
 }
 
+.file-upload-label {
+    display: inline-block;
+    background-color: transparent; /* Fondo transparente */
+    color: #33495c;
+    border: 1px solid #33495c;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 20px; /* Espacio inferior */
 
+}
+
+.file-upload-label:hover {
+    background-color: #f4f4f4; /* Color de fondo al pasar el cursor */
+}
+
+.download-button, .delete-button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin-left: 5px; /* Espacio entre botones */
+    width: 20px;
+}
+
+.download-button .material-icons, .delete-button .material-icons {
+    font-size: 16px; /* Tamaño del ícono */
+}
+
+.download-button .material-icons {
+    color: #33495c; /* Color del ícono */
+}
+
+.download-button:hover .material-icons {
+    color: #925353; /* Color del ícono al pasar el cursor */
+}
+
+.delete-button .material-icons {
+    color: red; /* Color del ícono */
+}
+
+.delete-button:hover .material-icons {
+    color: darkred; /* Color del ícono al pasar el cursor */
+}
+
+.saved-file-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.saved-file-item img {
+    max-width: 100px;
+    height: auto;
+    margin-right: 10px;
+}

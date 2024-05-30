@@ -1,0 +1,51 @@
+<div class="main-container">
+    <h1>Contratos:</h1>
+
+    <div *ngIf="savedFiles.length > 0">
+        <h3>Archivos guardados:</h3>
+        <ul>
+            <li *ngFor="let file of savedFiles" class="saved-file-item">
+                <img [src]="file.fileUrl" alt="Archivo guardado">
+                <p>{{ file.fileName }}</p>
+                <a [href]="file.fileUrl" download class="download-button">
+                    <i class="material-icons">arrow_downward</i>
+                </a>
+                <button (click)="deleteFile(file)" class="delete-button">
+                    <i class="material-icons">delete</i>
+                </button>
+                <button (click)="openInfo(file)" class="info-button">
+                    Mostrar Información
+                </button>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Modal -->
+    <div *ngIf="selectedFile" class="modal">
+        <div class="modal-content">
+            <span class="close-button" (click)="closeInfo()">&times;</span>
+            <h2>Información del Contratista</h2>
+            <div class="info-container">
+                <p><strong>Nombre y Apellido:</strong> {{ selectedFile.contratistaInfo.nombre }}</p>
+                <p><strong>Documento:</strong> {{ selectedFile.contratistaInfo.documento }}</p>
+                <p><strong>Email:</strong> {{ selectedFile.contratistaInfo.correo }}</p>
+                <p><strong>Celular:</strong> {{ selectedFile.contratistaInfo.celular }}</p>
+                <p><strong>Dirección:</strong> {{ selectedFile.contratistaInfo.direccion }}</p>
+                <p><strong>Fecha de Inicio:</strong> {{ selectedFile.contratistaInfo.fechaInicio }}</p>
+                <p><strong>Fecha de Finalización:</strong> {{ selectedFile.contratistaInfo.fechaFinalizacion }}</p>
+                <p><strong>Número de Horas:</strong> {{ selectedFile.contratistaInfo.horas }}</p>
+                <p><strong>Valor Hora:</strong> {{ selectedFile.contratistaInfo.valorHora }}</p>
+                <h3>Información de pago de seguridad social:</h3>
+                <p *ngIf="selectedFile.contratistaInfo.valorHora && selectedFile.contratistaInfo.horas">
+                    Valor de hora: {{ selectedFile.contratistaInfo.valorHora }}<br>
+                    Número de horas: {{ selectedFile.contratistaInfo.horas }}<br>
+                    Pago total: {{ calcularPagoTotal(selectedFile.contratistaInfo) | currency }}
+                    <br>
+                    <span *ngIf="calcularPagoTotal(selectedFile.contratistaInfo) < 520000">
+                        Usted no debe pagar seguridad social.
+                    </span>
+                </p>
+                
+            </div>
+        </div>
+    </div>
